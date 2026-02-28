@@ -8,14 +8,15 @@ import escapeRoomImg from '../assets/escapeRoom.png';
 import resonanceImg from '../assets/resonance.png';
 import bidBattleImg from '../assets/bid battle.png';
 import detectiveMysteryImg from '../assets/detectiveMystery.png';
-import bidBattleRulesImg from '../assets/rules/bidBattleRules.png';
-import detectiveMysteryRulesImg from '../assets/rules/detectiveMysteryRules.png';
-import oneSceneRulesImg from '../assets/rules/oneSceneRules.png';
-import paperlyticsRulesImg from '../assets/rules/paperlyticsRules.png';
-import projectRulesImg from '../assets/rules/projectRules.png';
-import escapeRoomRulesImg from '../assets/rules/escapeRoomRules.png';
-import resonanceRulesImg from '../assets/rules/resonanceRules.png';
-import circuitRulesImg from '../assets/rules/circuitRules.png';
+import bidBattleRulesImg from '../assets/Rules/bidBattleRules.png';
+import detectiveMysteryRulesImg from '../assets/Rules/detectiveMysteryRules.png';
+import oneSceneRulesImg from '../assets/Rules/oneSceneRules.png';
+import paperlyticsRulesImg from '../assets/Rules/paperlyticsRules.png';
+import projectRulesImg from '../assets/Rules/projectRules.png';
+import escapeRoomRulesImg from '../assets/Rules/escapeRoomRules.png';
+import resonanceRulesImg from '../assets/Rules/ResonanceRules.png';
+import circuitRulesImg from '../assets/Rules/circuitRules.png';
+
 
 
 function Events() {
