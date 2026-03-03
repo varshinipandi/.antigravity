@@ -11,40 +11,15 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [showIntro, setShowIntro] = useState(true);
-
-  const handleVideoEnd = () => {
-    setShowIntro(false);
-  };
-
-  useEffect(() => {
-    document.body.style.overflow = showIntro ? "hidden" : "auto";
-  }, [showIntro]);
-
   return (
     <>
-      {showIntro && (
-        <div className="video-overlay">
-          <video
-            src={BeginVideo}
-            autoPlay
-            muted
-            playsInline
-            onEnded={handleVideoEnd}
-            className="intro-video"
-          />
-        </div>
-      )}
-
-      {!showIntro && (
-        <div className="app">
-          <Header />
-          <HeroSection />
-          <Events />
-          <Coordinators />
-          <Footer />
-        </div>
-      )}
+      <div className="app">
+        <Header />
+        <HeroSection />
+        <Events />
+        <Coordinators />
+        <Footer />
+      </div>
     </>
   );
 }

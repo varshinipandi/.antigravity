@@ -13,8 +13,6 @@ function HeroSection() {
     seconds: 0,
   });
 
-  // ✅ FIX ADDED HERE
-  const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
     const targetDate = new Date("March 20, 2026 00:00:00").getTime();
@@ -41,28 +39,6 @@ function HeroSection() {
   return (
     <section id="home" className="hero-section">
 
-      {/* ✅ VIDEO BACKGROUND */}
-
-      <div className="video-background">
-  <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  style={{
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    zIndex: -1
-  }}
->
-  <source src="/IntroVideo.mp4" type="video/mp4" />
-</video>
-  <div className="video-overlay"></div>
-</div>
 
       <div className="hero-content">
 
@@ -92,9 +68,9 @@ function HeroSection() {
         </p>
 
         {/* 🔥 REGISTRATION DAYS LEFT BOX */}
-<div className="registration-box">
-  <h3>{timeLeft.days} Days Left Registration closes on March 20, 2026</h3>
-</div>
+        <div className="registration-box">
+          <h3>{timeLeft.days} Days Left Registration closes on March 20, 2026</h3>
+        </div>
 
         {/* 🔥 COUNTDOWN */}
         <div className="countdown-wrapper">

@@ -1,28 +1,45 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Events.css';
+
 import paperlyticsImg from '../assets/paperlytics.png';
 import technoParadeImg from '../assets/tecnoparade.png';
 import busBusterImg from '../assets/busbuster.png';
 import oneSenseImg from '../assets/onesenseengineering.png';
 import escapeRoomImg from '../assets/escapeRoom.png';
 import resonanceImg from '../assets/resonance.png';
-import bidBattleImg from '../assets/bid battle.png';
-import detectiveMysteryImg from '../assets/detectiveMystery.png';
+import bidBattleImg from '../assets/bidBattle.png';
+import detectiveMysteryImg from '../assets/jumanji.png';
+import jumanjiImg from '../assets/jumanji.png'; // ✅ Added missing import
+
 import bidBattleRulesImg from '../assets/Rules/bidBattleRules.png';
-import detectiveMysteryRulesImg from '../assets/Rules/detectiveMysteryRules.png';
 import oneSceneRulesImg from '../assets/Rules/oneSceneRules.png';
 import paperlyticsRulesImg from '../assets/Rules/paperlyticsRules.png';
 import projectRulesImg from '../assets/Rules/projectRules.png';
 import escapeRoomRulesImg from '../assets/Rules/escapeRoomRules.png';
 import resonanceRulesImg from '../assets/Rules/ResonanceRules.png';
 import circuitRulesImg from '../assets/Rules/circuitRules.png';
-
-
+import jumanjiRulesImg from '../assets/Rules/jumanjiRules.png';
 
 function Events() {
+
   const [selectedCategory, setSelectedCategory] = useState('technical');
   const [activeEvent, setActiveEvent] = useState(null);
   const [showOffer, setShowOffer] = useState(false);
+
+  // ✅ Fixed useEffect error
+  useEffect(() => {
+    if (activeEvent) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [activeEvent]);
+
+  const closeModal = () => {
+    setActiveEvent(null);
+    setShowOffer(false);
+  };
 
   const timelineEvents = [
     { name: 'Registration  (08:30-09:30)', icon: '📝', order: 1 },
@@ -30,158 +47,150 @@ function Events() {
     { name: 'Technical Events...(10:00-12:30)', icon: '💻', order: 3 },
     { name: 'Lunch...(12:30-01:30)', icon: '🍽️', order: 4 },
     { name: 'Non-Technical Events...(01:30-03:00)', icon: '🎯', order: 5 },
-    { name: 'Valediction   (30:00-03:30)', icon: '🏆', order: 6 }
+    { name: 'Valediction   (03:00-03:30)', icon: '🏆', order: 6 } // ✅ Fixed time typo
   ];
-  
-  const technicalEvents = [
-  {
-    id: 1,
-    title: 'Paperlytis',
-    quote: 'Innovate. Present. Inspire the future of technology.',
-    description: 'Demonstrate your technical expertise through compelling paper presentations',
-    image: paperlyticsImg,
-    rulesImage: paperlyticsRulesImg,
-    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSeCt7FeZF7l1BPEfgiqO6GxlsUNnHlede6S7U9Qa-L_Ckatgg/viewform?usp=preview",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹200 / Head',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Hariharan M (6381375200)',
-      venue: 'Conference Hall'
-    }
-  },
-  {
-    id: 2,
-    title: 'Techno Parade',
-    quote: 'Where brilliance meets innovation on display.',
-    description: 'Interactive tech exhibition displaying innovative projects and prototypes',
-    image: technoParadeImg,
-    rulesImage: projectRulesImg,
-    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSeCt7FeZF7l1BPEfgiqO6GxlsUNnHlede6S7U9Qa-L_Ckatgg/viewform?usp=preview",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹200 / Head',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Karthick Ragavan (8778172460)',
-      venue: 'Expo Arena'
-    }
-  },
-  {
-    id: 3,
-    title: 'Circuit Debugging Arena',
-    quote: 'Code. Debug. Conquer.',
-    description: 'Challenging debugging competition for coding enthusiasts',
-    image: busBusterImg,
-    rulesImage: circuitRulesImg,
-    formLink: "CIRCUITDEBUGGEIG_FORM_LINK",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹200 / Head',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Yohanaa M (9962765593)',
-      venue: 'Computer Lab'
-    }
-  },
-  {
-    id: 4,
-    title: 'One Sense Engineering',
-    quote: 'Build the impossible. Engineer your success.',
-    description: 'Real-time engineering challenges testing your problem-solving skills',
-    image: oneSenseImg,
-    rulesImage: oneSceneRulesImg,
-    formLink: "ONESENSE_FORM_LINK",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹200 / Head',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Vishnu Priya S (7373624101)',
-      venue: 'Workshop Hall'
-    }
-  }
-];
 
-const nonTechnicalEvents = [
-  {
-    id: 5,
-    title: 'Escape Room',
-    quote: 'Test your general knowledge',
-    description: 'Competitive quiz on technology and current innovations',
-    image: escapeRoomImg,
-    rulesImage: escapeRoomRulesImg,
-    formLink: "ESCAPEROOM_FORM_LINK",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹100 / Team',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Sudharsana S S (9486412288)',
-      venue: 'Seminar Hall'
+  const technicalEvents = [
+    {
+      id: 1,
+      title: 'Paperlytics',
+      quote: 'Innovate. Present. Inspire the future of technology.',
+      description: 'Demonstrate your technical expertise through compelling paper presentations',
+      image: paperlyticsImg,
+      rulesImage: paperlyticsRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹200 / Head',
+        team: '1 to 3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Hariharan M (6381375200)',
+        venue: 'Conference Hall'
+      }
+    },
+    {
+      id: 2,
+      title: 'Techno Parade',
+      quote: 'Where brilliance meets innovation on display.',
+      description: 'Interactive tech exhibition displaying innovative projects and prototypes',
+      image: technoParadeImg,
+      rulesImage: projectRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹200 / Head',
+        team: '2 to 3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Karthick Ragavan (8778172460)',
+        venue: 'Expo Arena'
+      }
+    },
+    {
+      id: 3,
+      title: 'Circuit Debugging Arena',
+      quote: 'Code. Debug. Conquer.',
+      description: 'Challenging debugging competition for coding enthusiasts',
+      image: busBusterImg,
+      rulesImage: circuitRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹200 / Head',
+        team: '3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Yohanaa M (9962765593)',
+        venue: 'Computer Lab'
+      }
+    },
+    {
+      id: 4,
+      title: 'One Sense Engineering',
+      quote: 'Build the impossible. Engineer your success.',
+      description: 'Real-time engineering challenges testing your problem-solving skills',
+      image: oneSenseImg,
+      rulesImage: oneSceneRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹200 / Head',
+        team: '2 to 3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Vishnu Priya S (7373624101)',
+        venue: 'Workshop Hall'
+      }
     }
-  },
-  {
-    id: 6,
-    title: 'Resonance',
-    quote: 'Feel the rhythm.',
-    description: 'Fun music and rhythm based competition',
-    image: resonanceImg,
-    rulesImage: resonanceRulesImg,
-    formLink: "RESONANCE_FORM_LINK",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹100 / Team',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Akshaya M (6381680770)',
-      venue: 'Open Stage'
+  ];
+
+  const nonTechnicalEvents = [
+    {
+      id: 5,
+      title: 'Escape Room',
+      quote: 'Test your general knowledge',
+      description: 'Competitive quiz on technology and current innovations',
+      image: escapeRoomImg,
+      rulesImage: escapeRoomRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹100 / Team',
+        team: '2 to 3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Sudharsana S S (9486412288)',
+        venue: 'Seminar Hall'
+      }
+    },
+    {
+      id: 6,
+      title: 'Resonance',
+      quote: 'Feel the rhythm.',
+      description: 'Fun music and rhythm based competition',
+      image: resonanceImg,
+      rulesImage: resonanceRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹100 / Team',
+        team: '2 to 3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Akshaya M (6381680770)',
+        venue: 'Open Stage'
+      }
+    },
+    {
+      id: 7,
+      title: 'Bid Battle',
+      quote: 'Pitch. Bid. Win.',
+      description: 'Showcase your startup ideas and innovative concepts',
+      image: bidBattleImg,
+      rulesImage: bidBattleRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹100 / Team',
+        team: '3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Rohit M (9043314330)',
+        venue: 'Presentation Hall'
+      }
+    },
+    {
+      id: 8,
+      title: 'Jumanji',
+      quote: 'Adventure awaits. Solve. Survive. Succeed.',
+      description: 'An exciting and interactive team challenge filled with puzzles, tasks, and mystery-solving activities.',
+      image: jumanjiImg,
+      rulesImage: jumanjiRulesImg,
+      info: {
+        date: 'March 27, 2026',
+        time: '10.00 AM to 1:00 PM',
+        fee: '₹100 / Team',
+        team: '2 to 3 Members',
+        prizes: 'Certification & shield for winners',
+        coordinator: 'Priya Dharshini S (6374067300)',
+        venue: 'Activity Room'
+      }
     }
-  },
-  {
-    id: 7,
-    title: 'Bid Battle',
-    quote: 'Pitch. Bid. Win.',
-    description: 'Showcase your startup ideas and innovative concepts',
-    image: bidBattleImg,
-    rulesImage: bidBattleRulesImg,
-    formLink: "BIDBATTLE_FORM_LINK",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹100 / Team',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Rohit M (9043314330)',
-      venue: 'Presentation Hall'
-    }
-  },
-  {
-    id: 8,
-    title: 'Detective Mystery',
-    quote: 'Solve the mystery.',
-    description: 'Fun and engaging team investigation game',
-    image: detectiveMysteryImg,
-    rulesImage: detectiveMysteryRulesImg,
-    formLink: "DETECTIVEMYSTERY_FORM_LINK",
-    info: {
-      date: 'March 27, 2026',
-      time: '10.00 AM to 1:00 PM',
-      fee: '₹100 / Team',
-      team: '1 to 3 Members',
-      prizes: 'Certification & sheald for winners',
-      coordinator: 'Priya Dharshini S (6374067300)',
-      venue: 'Activity Room'
-    }
-  }
-];
+  ];
 
   const displayEvents = selectedCategory === 'technical' ? technicalEvents : nonTechnicalEvents;
 
@@ -283,130 +292,93 @@ const nonTechnicalEvents = [
           })}
         </div>
 
-        {/* EVENT DETAILS MODAL */}
-        {activeEvent && (
-  <div className="event-modal-overlay" onClick={() => setActiveEvent(null)}>
-    <div className="event-modal" onClick={(e) => e.stopPropagation()}>
-
-      <button className="modal-close" onClick={() => setActiveEvent(null)}>✕</button>
-
-      {/* IMAGE – SAME AS CARD */}
-      <div
-        className="modal-image"
-        style={{ backgroundImage: `url(${activeEvent.image})` }}
-      />
-
-      <div className="modal-content">
-        <h2 className="modal-title">{activeEvent.title}</h2>
-        <p className="modal-description">{activeEvent.description}</p>
-
-        {/* INFO GRID – 2 PER ROW */}
-        <div className="modal-details-grid">
-          <div className="info-box"><span>Date</span><p>{activeEvent.info.date}</p></div>
-          <div className="info-box"><span>Time</span><p>{activeEvent.info.time}</p></div>
-          <div className="info-box"><span>Fee</span><p>{activeEvent.info.fee}</p></div>
-          <div className="info-box"><span>Team</span><p>{activeEvent.info.team}</p></div>
-          <div className="info-box"><span>Prizes</span><p>{activeEvent.info.prizes}</p></div>
-          <div className="info-box"><span>Coordinator</span><p>{activeEvent.info.coordinator}</p></div>
-        </div>
-
-        {/* ACTION BUTTONS – SIDE BY SIDE */}
-       {/* ACTION BUTTONS – SIDE BY SIDE */}
-<div className={`modal-actions ${
-    selectedCategory === 'technical' ? 'technical-layout' : ''
-  }`}>
-  <button
-    className="modal-register-btn"
-    onClick={() => window.open(activeEvent.formLink)}
-  >
-    Register Now
-  </button>
-
-  <button
-    className="modal-rules-btn"
-    onClick={() => window.open(activeEvent.rulesImage)}
-  >
-    Rules
-  </button>
-
-  {/* OFFER BUTTON – ONLY FOR TECHNICAL EVENTS */}
-  {selectedCategory === 'technical' && (
-  <button
-    className="modal-rules-btn"
-    onClick={() => setShowOffer(true)}
-  >
-    View Offer
-  </button>
-)}
- {showOffer && (
-      <div className="offer-overlay">
-        <div className="offer-popup">
-
-          {/* Balloons Background */}
-      <div className="balloons">
-        <div className="balloon"></div>
-        <div className="balloon"></div>
-        <div className="balloon"></div>
-        <div className="balloon"></div>
-      </div>
-
-      {/* Crackers */}
-      <div className="cracker cracker1"></div>
-      <div className="cracker cracker2"></div>
-      <div className="cracker cracker3"></div>
-      <div className="cracker cracker4"></div>
-      <div className="cracker cracker5"></div>
-
-          {/* Sparkles */}
-          <div className="sparkle sparkle1"></div>
-          <div className="sparkle sparkle2"></div>
-          <div className="sparkle sparkle3"></div>
-          <div className="sparkle sparkle1"></div>
-          <div className="sparkle sparkle2"></div>
-          <div className="sparkle sparkle3"></div>
-
-          {/* Confetti */}
-          <div className="confetti">
-            <span></span><span></span><span></span>
-            <span></span><span></span>
-          </div>
-
-          <h2 className="offer-title">Participation Offer</h2>
-
-          <div className="offer-text">
-            <p>
-              Participants who register for any one Technical Event are eligible
-              to attend any one Non-Technical Event free of cost.
-            </p>
-            <p>
-              There is no additional registration fee required for the selected
-              non-technical event.
-            </p>
-            <p>
-              Kindly refer to the list of Non-Technical Events and choose the
-              event you wish to participate in while filling out the registration form.
-            </p>
-          </div>
-
-          <button
-            className="offer-close"
-            onClick={() => setShowOffer(false)}
+        {/* COMMON REGISTER BUTTON – changes per category */}
+        <div className="category-register-wrap">
+          <a
+            href="https://erpsrm.com/srmhonline/eventsmcet/loginManager/youLogin.jsp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="category-register-btn"
           >
-            ✖
-          </button>
-
+            {selectedCategory === 'technical' ? '💻 Register for Technical Events' : '🎯 Register for Non-Technical Events'}
+          </a>
         </div>
       </div>
-    )}
 
-      </div>
+      {/* EVENT DETAILS MODAL – fixed overlay outside all containers */}
+      {activeEvent && (
+        <div className="event-modal-overlay" onClick={closeModal}>
+          <div className="event-modal" onClick={(e) => e.stopPropagation()}>
 
-      </div>
+            <button className="modal-close" onClick={closeModal}>✕</button>
 
-    </div>
-  </div>
-)}
-      </div>
+            {/* EVENT IMAGE */}
+            <div
+              className="modal-image"
+              style={{ backgroundImage: `url(${activeEvent.image})` }}
+            />
+
+            <div className="modal-content">
+              <h2 className="modal-title">{activeEvent.title}</h2>
+              <p className="modal-description">{activeEvent.description}</p>
+
+              {/* INFO GRID */}
+              <div className="modal-details-grid">
+                <div className="info-box"><span>Date</span><p>{activeEvent.info.date}</p></div>
+                <div className="info-box"><span>Time</span><p>{activeEvent.info.time}</p></div>
+                <div className="info-box"><span>Fee</span><p>{activeEvent.info.fee}</p></div>
+                <div className="info-box"><span>Team</span><p>{activeEvent.info.team}</p></div>
+                <div className="info-box"><span>Prizes</span><p>{activeEvent.info.prizes}</p></div>
+                <div className="info-box"><span>Coordinator</span><p>{activeEvent.info.coordinator}</p></div>
+              </div>
+
+              {/* ACTION BUTTONS */}
+              <div className={`modal-actions ${selectedCategory === 'technical' ? 'technical-layout' : ''}`}>
+                <button className="modal-rules-btn" onClick={() => window.open(activeEvent.rulesImage)}>
+                  Rules
+                </button>
+                {selectedCategory === 'technical' && (
+                  <button className="modal-rules-btn" onClick={() => setShowOffer(true)}>
+                    View Offer
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* OFFER POPUP – separate fixed overlay */}
+      {showOffer && (
+        <div className="offer-overlay" onClick={() => setShowOffer(false)}>
+          <div className="offer-popup" onClick={(e) => e.stopPropagation()}>
+            <div className="balloons">
+              <div className="balloon"></div>
+              <div className="balloon"></div>
+              <div className="balloon"></div>
+              <div className="balloon"></div>
+            </div>
+            <div className="cracker cracker1"></div>
+            <div className="cracker cracker2"></div>
+            <div className="cracker cracker3"></div>
+            <div className="cracker cracker4"></div>
+            <div className="cracker cracker5"></div>
+            <div className="sparkle sparkle1"></div>
+            <div className="sparkle sparkle2"></div>
+            <div className="sparkle sparkle3"></div>
+            <div className="confetti">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 className="offer-title">Participation Offer</h2>
+            <div className="offer-text">
+              <p>Participants who register for any one Technical Event are eligible to attend any one Non-Technical Event free of cost.</p>
+              <p>There is no additional registration fee required for the selected non-technical event.</p>
+              <p>Kindly refer to the list of Non-Technical Events and choose the event you wish to participate in while filling out the registration form.</p>
+            </div>
+            <button className="offer-close" onClick={() => setShowOffer(false)}>✖</button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

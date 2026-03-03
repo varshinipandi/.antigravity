@@ -19,7 +19,7 @@ export default function Coordinators() {
                 <div className="coord-contact">
                   <span className="contact-box phone-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <a href="tel:+91-XXXXXXXXXX">+91-8144932373</a>
@@ -43,10 +43,10 @@ export default function Coordinators() {
                 <div className="coord-contact">
                   <span className="contact-box phone-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <a href="tel:+91-YYYYYYYYYY">+91-YYYYYYYYYY</a>
+                  <a href="tel:+91-YYYYYYYYYY">+91-9095713636</a>
 
                   <a className="wa-link" href="https://wa.me/91YYYYYYYYYY" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                     <span className="contact-box wa-box">
@@ -75,7 +75,7 @@ export default function Coordinators() {
                 <div className="coord-contact">
                   <span className="contact-box phone-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <a href="tel:+91-AAAAAAAAAA">+91-9597631753</a>
@@ -99,7 +99,7 @@ export default function Coordinators() {
                 <div className="coord-contact">
                   <span className="contact-box phone-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <a href="tel:+91-BBBBBBBBBB">+91-9363116921</a>
@@ -123,7 +123,7 @@ export default function Coordinators() {
                 <div className="coord-contact">
                   <span className="contact-box phone-box">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <a href="tel:+91-CCCCCCCCCC">+91-9489449690</a>
@@ -140,6 +140,33 @@ export default function Coordinators() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="creators-section-container">
+        <h2 className="creators-main-heading">Webpage Creators</h2>
+        <div className="creators-wrapper">
+
+          <div className="coord-card creator-card">
+            <div className="matrix-overlay"></div>
+            <div className="coord-inner">
+              <div className="coord-info creator-info">
+                <div className="coord-name">Varshini. P</div>
+                <div className="coord-role">3rd Year - B.E (ECE)</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="coord-card creator-card">
+            <div className="matrix-overlay"></div>
+            <div className="coord-inner">
+              <div className="coord-info creator-info">
+                <div className="coord-name">Silakini. K</div>
+                <div className="coord-role">3rd Year - B.E (ECE)</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
