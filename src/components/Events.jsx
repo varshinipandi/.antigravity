@@ -8,8 +8,7 @@ import oneSenseImg from '../assets/onesenseengineering.png';
 import escapeRoomImg from '../assets/escapeRoom.png';
 import resonanceImg from '../assets/resonance.png';
 import bidBattleImg from '../assets/bidBattle.png';
-import detectiveMysteryImg from '../assets/jumanji.png';
-import jumanjiImg from '../assets/jumanji.png'; // ✅ Added missing import
+import jumanjiImg from '../assets/jumanji.png';
 
 import bidBattleRulesImg from '../assets/Rules/bidBattleRules.png';
 import oneSceneRulesImg from '../assets/Rules/oneSceneRules.png';
@@ -53,7 +52,7 @@ function Events() {
   const technicalEvents = [
     {
       id: 1,
-      title: 'Paperlytics',
+      title: 'Paperlytics (Paper Presentation)',
       quote: 'Innovate. Present. Inspire the future of technology.',
       description: 'Demonstrate your technical expertise through compelling paper presentations',
       image: paperlyticsImg,
@@ -70,7 +69,7 @@ function Events() {
     },
     {
       id: 2,
-      title: 'Techno Parade',
+      title: 'Techno Parade (Project Display)',
       quote: 'Where brilliance meets innovation on display.',
       description: 'Interactive tech exhibition displaying innovative projects and prototypes',
       image: technoParadeImg,
@@ -87,7 +86,7 @@ function Events() {
     },
     {
       id: 3,
-      title: 'Circuit Debugging Arena',
+      title: 'Circuit Debugging Arena (Code Debugging)',
       quote: 'Code. Debug. Conquer.',
       description: 'Challenging debugging competition for coding enthusiasts',
       image: busBusterImg,
@@ -104,7 +103,7 @@ function Events() {
     },
     {
       id: 4,
-      title: 'One Sense Engineering',
+      title: 'One Sense Engineering (Technical Connection)',
       quote: 'Build the impossible. Engineer your success.',
       description: 'Real-time engineering challenges testing your problem-solving skills',
       image: oneSenseImg,
@@ -158,7 +157,7 @@ function Events() {
     },
     {
       id: 7,
-      title: 'Bid Battle',
+      title: 'IPL Auction',
       quote: 'Pitch. Bid. Win.',
       description: 'Showcase your startup ideas and innovative concepts',
       image: bidBattleImg,
