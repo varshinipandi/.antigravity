@@ -22,9 +22,9 @@ export default function Coordinators() {
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <a href="tel:+91-XXXXXXXXXX">+91-8144932373</a>
+                  <a href="tel:+91-8144932373">+91-8144932373</a>
 
-                  <a className="wa-link" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                  <a className="wa-link" href="https://wa.me/918144932374" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                     <span className="contact-box wa-box">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                         <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1" />
@@ -46,9 +46,9 @@ export default function Coordinators() {
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <a href="tel:+91-YYYYYYYYYY">+91-9095713636</a>
+                  <a href="tel:+91-9095713636">+91-9095713636</a>
 
-                  <a className="wa-link" href="https://wa.me/91YYYYYYYYYY" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                  <a className="wa-link" href="https://wa.me/919095713636" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                     <span className="contact-box wa-box">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                         <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1" />
@@ -78,9 +78,9 @@ export default function Coordinators() {
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <a href="tel:+91-AAAAAAAAAA">+91-9597631753</a>
+                  <a href="tel:+91-9597631753">+91-9597631753</a>
 
-                  <a className="wa-link" href="https://wa.me/91AAAAAAAAAA" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                  <a className="wa-link" href="https://wa.me/919597631753" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                     <span className="contact-box wa-box">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                         <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1" />
@@ -102,9 +102,9 @@ export default function Coordinators() {
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <a href="tel:+91-BBBBBBBBBB">+91-9363116921</a>
+                  <a href="tel:+91-9363116921">+91-9363116921</a>
 
-                  <a className="wa-link" href="https://wa.me/91BBBBBBBBBB" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                  <a className="wa-link" href="https://wa.me/919363116921" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                     <span className="contact-box wa-box">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                         <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1" />
@@ -126,9 +126,9 @@ export default function Coordinators() {
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12 1.2.38 2.38.78 3.5a2 2 0 0 1-.45 2.11L9.09 11.91a16 16 0 0 0 6 6l1.58-1.58a2 2 0 0 1 2.11-.45c1.12.4 2.3.66 3.5.78A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
-                  <a href="tel:+91-CCCCCCCCCC">+91-9489449690</a>
+                  <a href="tel:+91-9489449690">+91-9489449690</a>
 
-                  <a className="wa-link" href="https://wa.me/91CCCCCCCCCC" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                  <a className="wa-link" href="https://wa.me/919489449690" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                     <span className="contact-box wa-box">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                         <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1" />
