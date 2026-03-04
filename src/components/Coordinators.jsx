@@ -69,7 +69,7 @@ export default function Coordinators() {
             <div className="coord-list">
               <div className="coord-row">
                 <div className="coord-info">
-                  <div className="coord-name">Achudhen. M. B</div>
+                  <div className="coord-name">Achudhan M B</div>
                   <div className="coord-role">3rd Year - B.E (ECE)</div>
                 </div>
                 <div className="coord-contact">
@@ -93,7 +93,7 @@ export default function Coordinators() {
 
               <div className="coord-row">
                 <div className="coord-info">
-                  <div className="coord-name">Ashwin Kumar</div>
+                  <div className="coord-name">Aswin Kumar N S</div>
                   <div className="coord-role">3rd Year - B.E (ECE)</div>
                 </div>
                 <div className="coord-contact">
@@ -117,7 +117,7 @@ export default function Coordinators() {
 
               <div className="coord-row">
                 <div className="coord-info">
-                  <div className="coord-name">Nila</div>
+                  <div className="coord-name">Nila R H</div>
                   <div className="coord-role">3rd Year - B.E (ECE)</div>
                 </div>
                 <div className="coord-contact">
